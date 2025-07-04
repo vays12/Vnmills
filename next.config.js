@@ -5,6 +5,22 @@
 import "./src/env.js";
 
 /** @type {import("next").NextConfig} */
-const config = {};
+const config = {
+    images: {
+            remotePatterns: [
+                {
+                    protocol: 'https',
+                    hostname: 'media.istockphoto.com',
+                },
+                {
+                    protocol: 'https',
+                    hostname: 'kj1bcdn.b-cdn.net',
+                },
+            ],
+        },
+};
+
+
 
 export default config;
+
